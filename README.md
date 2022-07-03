@@ -1,3 +1,3 @@
-# Repositório do desafio de Projeto sobre Git/GitHub
+# Desafio de Projeto sobre Git/GitHub
 
-### Desafio de Projeto sobre Git/Github - Bootcamp Santander
+### Repositório crido para o Desafio de Projeto sobre Git/Github - Bootcamp Santander FullStack Dev.
