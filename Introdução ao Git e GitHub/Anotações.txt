@@ -1,4 +1,0 @@
-Dicas formatação Markdown : https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open
-
-O GitBash é um terminal extendido para otimizar o uso
-do Git.
