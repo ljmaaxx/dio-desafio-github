@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Fundamentos - Display Flex</title>
+        <style>            
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            border: 2px solid black;
+            max-width: 500px;
+        }
+
+        .item {
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            width: 100px;
+            min-width: 100px;
+            line-height: 50px;
+        }
+
+        .norap {
+            flex-wrap: nowrap;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+        
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: greenyellow;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+        </style>
+    </head>
+    <body>
+       <h1>no wrap</h1>
+       <div class="flex-container nowrap">
+            <div class="item orange">1</div>
+            <div class="item green">2</div>
+            <div class="item blue">3</div>
+            <div class="item blue">4</div>
+       </div>
+
+       <h1>wrap</h1>
+
+       <div class="flex-container wrap">
+            <div class="item green">1</div>
+            <div class="item orange">2</div>
+            <div class="item blue">3</div>
+            <div class="item blue">4</div>
+       </div>
+
+       <h1>wrap-reverse</h1>
+
+       <div class="flex-container wrap-reverse">
+            <div class="item green">1</div>
+            <div class="item orange">2</div>
+            <div class="item blue">3</div>
+            <div class="item blue">4</div>
+        </div>
+    </body>
+</html>

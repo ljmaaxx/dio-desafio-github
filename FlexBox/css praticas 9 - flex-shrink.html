@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Flex Shrink</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <style>
+            .flex-container {
+                display: flex;
+                border: 1px solid black;
+                max-width: 350px;
+            }
+            .item {
+                background-color: orangered;
+                font-size: 24px;
+                text-align: center;
+                margin: 5px;
+            }
+
+            .shrink {
+                flex-shrink: 1;
+            }
+
+            .flex-grow-1 {
+                flex-grow: 1;
+            }
+
+            .flex-grow-0 {
+                flex-shrink: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flex Shrink 1</h1>
+        <div class="flex-container">
+            <div class="item shrink flex-grow-1">a</div>
+            <div class="item shrink flex-grow-1">b</div>
+            <div class="item shrink flex-grow-1">c</div>
+            <div class="item shrink flex-grow-1">d</div>
+            <div class="item shrink flex-grow-1">e</div>
+        </div>
+
+        <h1>Exemplo 2</h1>
+        <div class="flex-container">
+            <div class="item shrink flex-grow-0">a</div>
+            <div class="item shrink flex-grow-0">b aha ha asas asag sajs s.</div>
+            <div class="item shrink flex-grow-0">c</div>
+            <div class="item shrink flex-grow-0">d</div>
+        </div>
+    </body>
+</html>

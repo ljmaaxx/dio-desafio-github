@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Align Itens</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <style>
+            .container {
+                max-width: 350px;
+                border: 2px solid burlywood;
+                display: flex;
+                border-radius: 20px;
+                background-color: burlywood;
+            }
+
+            .item {
+                background-color: cadetblue;
+                margin: 5px;
+                color: rgb(108, 50, 50);
+                text-align: center;
+                border-radius: 20px;
+                padding: 8px;
+                flex: 1;
+            }
+            .center {
+                align-items: center;
+            }
+
+            .stretch {
+                align-items: stretch;
+            }
+
+            .start {
+                align-items: flex-start;
+            }
+
+            .end {
+                align-items: flex-end;
+            }
+
+            .baseline {
+                align-items: baseline;
+            }
+
+            .column {
+                flex-direction: column;
+            }
+
+            .central {
+                height: 500px;
+                justify-content: center;
+            }
+
+            .central .item {
+                flex: 0;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ROW</h1>
+        <h2> Align Center</h2>
+        <section class="container center">
+            <div class="item">Item 1</div>
+            <div class="item">Lorem ipsum dolor sit amet</div>
+            <div class="item">Item 3</div>
+        </section>
+
+        <h2>Align Stretch</h2>
+        <section class="container stretch">
+            <div class="item">Item 1</div>
+            <div class="item">Lorem ipsum dolor sit amet</div>
+            <div class="item">Item 3</div>
+        </section>
+
+        <h2>Flex-Start</h2>
+        <section class="container start">
+            <div class="item">Item 1 abracadabra abracadabra abracadabra abracadabra abracadabra</div>
+            <div class="item">Lorem ipsum dolor sit amet</div>
+            <div class="item">Item 3 e uma coisa para aumentar</div>
+        </section>
+
+        <h2>Flex-End</h2>
+        <section class="container end">
+            <div class="item">Item 1 abracadabra abracadabra abracadabra</div>
+            <div class="item">Lorem ipsum dolor sit amet</div>
+            <div class="item">Item 3 e uma coisa para aumentar</div>
+        </section>
+
+        <h2>Baseline</h2>
+        <section class="container baseline">
+            <div class="item"> abracadabra abracadabra abracadabra abracadabra Item 1</div>
+            <div class="item">Lorem ipsum dolor sit amet</div>
+            <div class="item">Item 3 e uma coisa para aumentar</div>
+        </section>
+
+        <h1>COLUMN</h1>
+        <h2> Align Center</h2>
+        <section class="container center column">
+            <div class="item">Item 1</div>
+            <div class="item">Lorem ipsum dolor sit amet</div>
+            <div class="item">Item 3</div>
+        </section>
+
+        <h2>Align Stretch</h2>
+        <section class="container stretch column">
+            <div class="item">Item 1</div>
+            <div class="item">Lorem ipsum dolor sit amet</div>
+            <div class="item">Item 3</div>
+        </section>
+
+        <h2>Flex-Start</h2>
+        <section class="container start column">
+            <div class="item">Item 1 abracadabra abracadabra abracadabra abracadabra abracadabra</div>
+            <div class="item">Lorem ipsum dolor sit amet</div>
+            <div class="item">Item 3 e uma coisa para aumentar</div>
+        </section>
+
+        <h2>Flex-End</h2>
+        <section class="container end column">
+            <div class="item">Item 1 abracadabra abracadabra abracadabra</div>
+            <div class="item">Lorem ipsum dolor sit amet</div>
+            <div class="item">Item 3 e uma coisa para aumentar</div>
+        </section>
+
+        <h2>Baseline</h2>
+        <section class="container baseline column">
+            <div class="item"> abracadabra abracadabra abracadabra abracadabra Item 1</div>
+            <div class="item">Lorem ipsum dolor sit amet</div>
+            <div class="item">Item 3 e uma coisa para aumentar</div>
+        </section>
+        <h2>container no meio da tela</h2>
+        <section class="container central center">
+            <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>
+        </section>
+    </body>
+</html>
